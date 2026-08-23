@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f0e7"/>
+  <path d="M0 0h1200v18H0z" fill="#17130f"/>
+  <circle cx="1040" cy="118" r="52" fill="#17130f"/>
+  <path d="M1016 88v39c0 15 9 23 24 23h25" fill="none" stroke="#f4f0e7" stroke-width="12"/>
+  <path d="M1066 97c-6-8-14-11-23-11-18 0-31 14-31 33s13 33 31 33c9 0 17-4 23-11" fill="none" stroke="#df6f45" stroke-width="9"/>
+  <text x="84" y="112" fill="#17130f" font-family="monospace" font-size="18" font-weight="700" letter-spacing="5">LOVSTUDIO / CREATION LAB</text>
+  <text x="76" y="325" fill="#17130f" font-family="Georgia,serif" font-size="128" font-weight="700" letter-spacing="-8">先把想法</text>
+  <text x="76" y="462" fill="#df6f45" font-family="Georgia,serif" font-size="128" font-weight="700" letter-spacing="-8">说清楚。</text>
+  <text x="82" y="548" fill="#17130f" opacity=".62" font-family="sans-serif" font-size="29">LovCreate · 可执行的创作 Brief 工作台</text>
+</svg>
