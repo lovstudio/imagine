@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+### Minor Changes
+
+- Restore the complete LovStudio creation workspace with image, content, video, and webpage capability previews, and move production to creator.lovstudio.ai.
+
 ## 0.1.0 - 2026-08-24
 
 - 发布 LovCreate 独立内容创作实验室。
