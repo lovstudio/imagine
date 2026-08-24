@@ -1,102 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#16130f" />
-    <meta name="description" content="LovCreate 是 LovStudio 的独立内容创作实验室，把模糊想法整理成可执行、可复制的创作 Brief。" />
-    <meta property="og:title" content="LovCreate — 把想法整理成可执行的创作 Brief" />
-    <meta property="og:description" content="图片、内容、视频与网页创作，从一份清楚的 Brief 开始。" />
+    <meta name="theme-color" content="#f9f9f7" />
+    <meta
+      name="description"
+      content="LovCreate 是 LovStudio 的独立创作工作台，从一句话开始，匹配图片、内容、视频与网页创作能力。"
+    />
+    <meta property="og:title" content="LovCreate — 有个想法？做出来看看。" />
+    <meta
+      property="og:description"
+      content="图片、内容、视频与网页创作，从一句清楚的目标开始。"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://create.lovstudio.ai/og-image.svg" />
+    <meta
+      property="og:image"
+      content="https://creator.lovstudio.ai/og-image.svg"
+    />
     <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-    <title>LovCreate — 把想法变成可执行的创作 Brief</title>
+    <title>LovCreate — 有个想法？做出来看看。</title>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="LovCreate 首页">
-        <img src="/logo.svg" alt="" width="34" height="34" />
-        <span>LovCreate</span>
-      </a>
-      <div class="header-actions">
-        <span class="status"><i></i> Preview 0.1</span>
-        <a href="https://lovstudio.ai/apps">LovStudio Apps <span aria-hidden="true">↗</span></a>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">LOVSTUDIO / CREATION LAB</p>
-          <h1 id="hero-title">先把想法<br /><em>说清楚。</em></h1>
-          <p class="lede">图片、文章、视频或网页，都从一份清楚的 Brief 开始。LovCreate 把模糊念头整理成下一步可以执行的创作说明。</p>
-        </div>
-        <div class="hero-note" aria-label="产品状态">
-          <span>01 / 当前能力</span>
-          <strong>生成 Brief，匹配已发布的创作 Skills。</strong>
-          <p>媒体直接生成仍在内测；在结果经过验证前，我们不会把按钮写成“生成作品”。</p>
-        </div>
-      </section>
-
-      <section class="studio" aria-labelledby="studio-title">
-        <div class="studio-heading">
-          <p class="eyebrow">02 / BUILD A BRIEF</p>
-          <h2 id="studio-title">你想做什么？</h2>
-          <p>选择创作类型，写下一句目标。内容只保存在当前浏览器。</p>
-        </div>
-
-        <div class="workspace">
-          <form id="brief-form" class="brief-form">
-            <fieldset>
-              <legend>创作类型</legend>
-              <div id="mode-list" class="mode-list"></div>
-            </fieldset>
-
-            <label class="intent-field" for="intent">
-              <span>一句话目标</span>
-              <textarea id="intent" name="intent" rows="5" maxlength="800" required placeholder="例如：为一场夏夜读书会做一张温暖、克制的活动海报"></textarea>
-              <small><span id="intent-count">0</span> / 800</small>
-            </label>
-
-            <div class="form-footer">
-              <p id="mode-description"></p>
-              <button class="primary-action" type="submit">整理成 Brief <span aria-hidden="true">→</span></button>
-            </div>
-          </form>
-
-          <aside id="brief-output" class="brief-output" aria-live="polite" hidden>
-            <div class="output-heading">
-              <div>
-                <p class="eyebrow">YOUR CREATION BRIEF</p>
-                <h2>下一步已经清楚了。</h2>
-              </div>
-              <button id="copy-brief" class="quiet-action" type="button">复制 Brief</button>
-            </div>
-            <pre id="brief-text"></pre>
-            <div class="output-actions">
-              <a id="skills-link" class="primary-action" href="https://lovstudio.ai/skills">查看匹配的 Skills <span aria-hidden="true">↗</span></a>
-              <span id="copy-status" role="status"></span>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="principles" aria-labelledby="principles-title">
-        <p class="eyebrow">03 / PRODUCT PROMISE</p>
-        <h2 id="principles-title">创作工具首先要诚实。</h2>
-        <div class="principle-grid">
-          <article><span>01</span><h3>不假装生成</h3><p>按钮只描述当前真正完成的动作，未验证能力明确标记为内测。</p></article>
-          <article><span>02</span><h3>不上传原文</h3><p>Brief 在浏览器本地生成；只有你主动打开 Skills 时，目标才进入链接参数。</p></article>
-          <article><span>03</span><h3>保留人的判断</h3><p>工具负责减少模糊和重复，作品的方向、取舍与最终标准仍由你决定。</p></article>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>LovCreate by <a href="https://lovstudio.ai">LovStudio</a></p>
-      <p>Make the brief clear. Keep the judgment human.</p>
-    </footer>
-
-    <script type="module" src="/src/main.ts"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
