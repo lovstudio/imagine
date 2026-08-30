@@ -1,10 +1,16 @@
 # Changelog
 
+## 0.2.1
+
+### Patch Changes
+
+- Move the standalone source repository to `lovstudio/imagine` and align canonical production links with `create.lovstudio.ai`.
+
 ## 0.2.0
 
 ### Minor Changes
 
-- Restore the complete LovStudio creation workspace with image, content, video, and webpage capability previews, and move production to creator.lovstudio.ai.
+- Restore the complete LovStudio creation workspace with image, content, video, and webpage capability previews.
 
 ## 0.1.0 - 2026-08-24
 

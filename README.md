@@ -13,6 +13,8 @@ pnpm dev
 
 ## 发布
 
-生产站点：<https://creator.lovstudio.ai>
+生产站点：<https://create.lovstudio.ai>
+
+源代码：<https://github.com/lovstudio/imagine>
 
 推送 `v*` tag 后，GitHub Actions 会重新测试、构建并发布 `lovcreate-vX.Y.Z.zip`。
