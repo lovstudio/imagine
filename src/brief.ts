@@ -156,7 +156,7 @@ export function getCreationTarget(
     category: mode.category,
     query: mode.query,
     intent: normalizeIntent(rawIntent),
-    from: "creator",
+    from: "imagine",
   };
 }
 
@@ -166,7 +166,7 @@ export function createBrief(modeId: string, rawIntent: string): string {
   if (!intent) throw new Error("请先写下一句话目标。");
 
   return [
-    "LovCreate / 创作 Brief",
+    "Imagine / 创作 Brief",
     "",
     `创作类型：${mode.label}`,
     `目标：${intent}`,
@@ -188,7 +188,7 @@ export function buildSkillsUrl(modeId: string, rawIntent: string): string {
   if (mode.category) url.searchParams.set("category", mode.category);
   const intent = normalizeIntent(rawIntent);
   if (intent) url.searchParams.set("intent", intent);
-  url.searchParams.set("from", "creator");
+  url.searchParams.set("from", "imagine");
   url.hash = "skill-catalog";
   return url.toString();
 }

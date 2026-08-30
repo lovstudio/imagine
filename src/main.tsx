@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { ArrowUpRight } from "lucide-react";
-import { CreatorWorkspace } from "./CreatorWorkspace.tsx";
+import { ImagineWorkspace } from "./ImagineWorkspace.tsx";
 import "./style.css";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <div className="mx-auto flex min-h-[4.5rem] max-w-6xl items-center justify-between gap-4">
           <a
             href="/"
-            aria-label="LovCreate 首页"
+            aria-label="Imagine 首页"
             className="inline-flex items-center gap-2.5 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <img
@@ -24,13 +24,13 @@ function App() {
               className="rounded-full"
             />
             <span className="font-serif text-lg font-semibold tracking-[-0.025em]">
-              LovCreate
+              Imagine
             </span>
           </a>
           <div className="flex items-center gap-4 text-xs font-semibold">
             <span className="hidden items-center gap-2 font-mono uppercase tracking-[0.12em] text-muted-foreground sm:inline-flex">
               <i className="h-2 w-2 rounded-full bg-[#77a644] shadow-[0_0_0_4px_rgba(119,166,68,0.14)]" />
-              Creator 0.2
+              Imagine 0.3
             </span>
             <a
               href="https://lovstudio.ai/apps"
@@ -44,13 +44,13 @@ function App() {
       </header>
 
       <main>
-        <CreatorWorkspace zh={zh} />
+        <ImagineWorkspace zh={zh} />
       </main>
 
       <footer className="border-t border-border bg-[#eee9df] px-4 py-7 text-xs text-[#25221f]/65 sm:px-6">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            LovCreate by{" "}
+            Imagine by{" "}
             <a
               className="underline underline-offset-4"
               href="https://lovstudio.ai"

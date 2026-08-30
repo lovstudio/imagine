@@ -8,6 +8,6 @@ export function buildSkillDetailUrl(
   if (context.category) url.searchParams.set("category", context.category);
   if (context.query) url.searchParams.set("query", context.query);
   if (context.intent) url.searchParams.set("intent", context.intent);
-  url.searchParams.set("from", context.from ?? "creator");
+  url.searchParams.set("from", context.from ?? "imagine");
   return url.toString();
 }
