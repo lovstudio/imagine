@@ -97,7 +97,7 @@ const CREATION_MODES: CreationMode[] = [
 ];
 
 const DEFAULT_CREATION_MODE_ID: CreationModeId = "image";
-const CREATION_MODE_STORAGE_KEY = "lovcreator:creation-mode";
+const CREATION_MODE_STORAGE_KEY = "imagine:creation-mode";
 
 function isCreationModeId(value: string | null): value is CreationModeId {
   return CREATION_MODES.some((mode) => mode.id === value);
@@ -119,7 +119,7 @@ function modeName(mode: CreationMode, zh: boolean) {
   return zh ? mode.labelZh : mode.labelEn;
 }
 
-export function CreatorWorkspace({ zh }: { zh: boolean }) {
+export function ImagineWorkspace({ zh }: { zh: boolean }) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const outputRef = useRef<HTMLElement>(null);
   const [activeModeId, setActiveModeId] = useState<CreationModeId | null>(
@@ -360,8 +360,8 @@ export function CreatorWorkspace({ zh }: { zh: boolean }) {
       {brief && (
         <section
           ref={outputRef}
-          id="creator-brief-output"
-          data-testid="creator-brief-output"
+          id="imagine-brief-output"
+          data-testid="imagine-brief-output"
           aria-live="polite"
           className="scroll-mt-8 border-b border-border bg-[#eee9df] px-4 py-16 text-[#25221f] sm:px-6 sm:py-20"
         >

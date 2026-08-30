@@ -30,7 +30,7 @@ jobs:
       - name: Package site
         run: |
           TAG="${{ github.event.inputs.tag || github.ref_name }}"
-          zip -r "lovcreate-${TAG}.zip" dist
+          zip -r "imagine-${TAG}.zip" dist
       - name: Extract release notes
         id: notes
         run: |
@@ -50,4 +50,4 @@ jobs:
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
           body: ${{ steps.notes.outputs.body }}
-          files: lovcreate-${{ github.event.inputs.tag || github.ref_name }}.zip
+          files: imagine-${{ github.event.inputs.tag || github.ref_name }}.zip

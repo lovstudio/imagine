@@ -34,7 +34,7 @@ test("skills handoff carries only the selected mode and normalized intent", () =
   assert.equal(url.searchParams.get("category"), "Video Creation");
   assert.equal(url.searchParams.get("query"), "视频生成");
   assert.equal(url.searchParams.get("intent"), "60 秒 科普短片");
-  assert.equal(url.searchParams.get("from"), "creator");
+  assert.equal(url.searchParams.get("from"), "imagine");
   assert.equal(url.hash, "#skill-catalog");
 });
 
